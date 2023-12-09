@@ -1,6 +1,6 @@
 const dotenv = require("dotenv");
 const { connectDB } = require("./db/index");
-
+const { app } = require("./app");
 connectDB()
   .then(() => {
     app.listen(process.env.PORT || 8000, () => {
